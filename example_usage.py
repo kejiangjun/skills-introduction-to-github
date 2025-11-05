@@ -11,7 +11,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 from model_trainer import ModelTrainer
 import warnings
-warnings.filterwarnings('ignore')
+# Suppress convergence warnings from scikit-learn for cleaner output
+warnings.filterwarnings('ignore', category=UserWarning, module='sklearn')
 
 
 def example_basic_training():

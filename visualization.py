@@ -6,8 +6,7 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
-from sklearn.metrics import confusion_matrix, roc_curve, auc
-from sklearn.preprocessing import label_binarize
+from sklearn.metrics import confusion_matrix
 import os
 
 

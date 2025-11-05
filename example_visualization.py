@@ -12,7 +12,8 @@ from sklearn.svm import SVC
 from model_trainer import ModelTrainer
 from visualization import ModelVisualizer
 import warnings
-warnings.filterwarnings('ignore')
+# Suppress convergence warnings from scikit-learn for cleaner output
+warnings.filterwarnings('ignore', category=UserWarning, module='sklearn')
 
 
 def visualize_single_model():
